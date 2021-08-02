@@ -1,6 +1,24 @@
-import './style.css'
+import './src/css/reset.css';
+import './src/css/settings.css';
+import './src/css/colors.css';
 
-document.querySelector('#app').innerHTML = `
-  <h1>Hello Vite!</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-`
+import Header from './src/components/Header';
+import Menu from './src/components/Menu';
+import Projeto from './src/components/Projeto';
+
+const $htmlHeader = Header();
+const $htmlMenu = Menu();
+const $htmlProjeto = Projeto();
+
+const $root = document.querySelector('#root');
+
+$root.insertAdjacentHTML(
+  'beforeend',
+  `
+
+    ${$htmlHeader}
+    ${$htmlMenu}
+    ${$htmlProjeto}
+
+`,
+);

@@ -1,0 +1,90 @@
+.perfil-associacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 4rem;
+  width: 80%;
+  float: right;
+}
+
+.perfil-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2.4rem;
+  background: var(--color-red);
+  border-radius: 2px;
+}
+
+.img-perfil-info {
+  width: 150px;
+  border-radius: 50%;
+  margin: 2rem;
+}
+
+.nome-associacao-info {
+  font-size: 1.8rem;
+  padding: 1rem;
+  background: var(--color-white);
+  border-radius: 4px;
+  color: var(--color-red);
+  margin: 2rem;
+}
+
+.text-associacao-info {
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: var(--color-white);
+  margin: 2rem;
+}
+
+.contato-associacao-info {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--color-white);
+  margin: 2rem;
+}
+
+.perfil-edit {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-evenly;
+  background: var(--color-white);
+  padding: 2.4rem;
+}
+
+label,
+input {
+  margin: 1rem;
+  font-size: 1.4rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+input {
+  border: 1px solid var(--color-red);
+}
+
+.button-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-info > button {
+  width: 60%;
+  background: var(--color-green-button);
+  padding: 1.4rem;
+  color: var(--color-white);
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.button-info > button:hover {
+  background: #1db65c;
+}
